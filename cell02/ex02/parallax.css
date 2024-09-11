@@ -1,0 +1,40 @@
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.pic1 {
+    background-image: url('https://i.pinimg.com/564x/20/e5/67/20e56758b5b1a2c0fe0662c4298212fe.jpg');
+}
+
+.pic2 {
+    background-image: url('https://i.pinimg.com/236x/b3/7e/4d/b37e4d9ff304c21d9e719b47bba49f89.jpg');
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-message {
+    color: white;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+.black {
+    font-size: 50px;
+    height: 60vh;
+    background-color: black;
+    color: rgb(123, 0, 0);
+    padding: 150px;
+    text-align: center;
+}
