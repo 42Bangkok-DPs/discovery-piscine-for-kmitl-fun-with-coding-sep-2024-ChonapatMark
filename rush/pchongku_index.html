@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="pchongku_style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="content">
+            <h1>Pathipan Chongkul</h1>
+            <h3>Welcome to my portfolio, I hope you enjoy my portfolio</h3>
+            <h5>Bachelor of IoT system and Information Engineering at KMITL</h5>
+        </div>
+        <img class="profile-image" 
+            src="https://firebasestorage.googleapis.com/v0/b/kang-store.appspot.com/o/keng.jpg?alt=media&token=70c35ef5-1653-4d72-83ee-df61b62d6157" 
+            alt="keng">
+    </section>
+    <section id="about">
+        <div class="about-me">
+            <h1>About me</h1>
+            <p>
+                I am passionate about technology and innovation. My projects, including IoT systems, automated traffic lights, and web applications, 
+                have given me hands-on experience in creating practical and efficient solutions. 
+                I am excited to continue developing my skills and contributing to impactful tech projects.
+            </p>
+        </div>
+    </section>
+    <section id="skill">
+        <h1>Skills</h1>
+        <div class="skill-category">
+            <h3>Languages</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>PHP</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>C++</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>Tools</h3>
+            <ul>
+                <li>GitHub</li>
+                <li>VSCode</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>Cloud Platforms</h3>
+            <ul>
+                <li>Google Cloud</li>
+                <li>AWS</li>
+            </ul>
+        </div>
+    </section>    
+    <section id="project">
+        <h1>Projects</h1>
+        <div class="project">
+            <h3>Smart Rain Alert System</h3>
+            <p>
+                This is an IoT project that creates a rain alert system using ESP8266, Arduino UNO, and various sensors. 
+                ESP8266 sends data to the Blynk application via the Internet, while Arduino UNO collects data from sensors 
+                (Water Level Sensor and DHT11 Sensor) and sends it to ESP8266, which then uploads the data to Blynk for rain alert notifications.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1zG4cBGYCaEL_0Bt9-fkZ_987LvpX8-W-?usp=drive_link" class="see-more">See More</a>
+        </div>
+        <div class="project">
+            <h3>Traffic Light</h3>
+            <p>
+                This digital project simulates a road crossing system with safety barriers that work in conjunction with automatic 
+                traffic lights. The traffic light circuit is designed using various ICs connected to an Arduino UNO, which controls 
+                the barrier based on traffic light signals. When a switch is pressed, the traffic light changes from green to yellow 
+                and then to red, and if the light is red, the Arduino UNO commands the barrier to block the road.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1j07j5MIyIFDMAOJw3Pte77GP4VORcKyK?usp=drive_link" class="see-more">See More</a>
+        </div>
+        <div class="project">
+            <h3>Aqua Vision</h3>
+            <p>
+                This project involves measuring and controlling water levels using image processing technology. It uses a Raspberry Pi 
+                Zero W for processing and analyzes video data from a camera to monitor water levels. If the water level exceeds a set 
+                threshold, the system commands a pump to operate automatically, with the Arduino UNO working in tandem with the Raspberry Pi Zero W.
+            </p>
+            <a href="https://drive.google.com/drive/folders/18nwVEHEzdU-3nXZe8YEno-wKuVc-o1T0?usp=drive_link" class="see-more">See More</a>
+        </div>
+        <div class="project">
+            <h3>ChillFlow</h3>
+            <p>
+                This web application project aims to help students and book enthusiasts manage their reading time more effectively. 
+                It is developed using HTML, CSS, JavaScript, PHP, and SQL. The application includes features such as account management, 
+                music playback, theme selection, library, timer, and time statistics.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1qpJZv3tMl2npBGLLtZFpVw5yLVqYGEYe?usp=drive_link" class="see-more">See More</a>
+        </div>
+    </section>    
+    <section id="contact">
+        <h1>Contact</h1>
+        <div class="contact-info">
+            <p><strong>Phone:</strong> <a href="tel:0929249062">+66929249062</a></p>
+            <p><strong>Line ID:</strong> <a href="https://line.me/ti/p/PXLQHNmyw-">by-kang</a></p>
+            <p><strong>Email:</strong> <a href="mailto:kangpathipan04@gmai.com">kangpathipan04@gmail.com</a></p>
+        </div>
+    </section>    
+</body>
+</html>
