@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explode this balloon</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center; 
+            justify-content: center; 
+            height: 100vh; 
+            background-color: black;
+        }
+        #balloon {
+            width: 200px; 
+            height: 200px; 
+            background-color: red; 
+            border-radius: 50%; 
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="balloon"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let size = 200;
+            let color_index = 0;
+            let colors = ["red", "green", "blue"];
+
+            $("#balloon").on("click", function() {
+                size += 10;
+                if (size > 420) {
+                    size = 200;
+                }
+                $(this).css({
+                    width: size + 'px',
+                    height: size + 'px',
+                    backgroundColor: colors[color_index]
+                });
+                color_index = (color_index + 1) % colors.length;
+            });
+
+            $("#balloon").on("mouseleave", function() {
+                size -= 5;
+                if (size < 200) {
+                    size = 200;
+                }
+                $(this).css({
+                    width: size + 'px',
+                    height: size + 'px',
+                    backgroundColor: colors[color_index]
+                });
+                color_index = (color_index - 1 + colors.length) % colors.length;
+            });
+        });
+    </script>
+</body>
+</html>
