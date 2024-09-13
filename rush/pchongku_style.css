@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #333;
+    position: fixed;   
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px;
+    z-index: 1000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.navbar ul li {
+    margin: 10px 0;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+    border-radius: 10px;
+}
+
+section {
+    padding: 50px;
+    margin-left: 220px;
+}
+
+#home {
+    display: flex;
+    align-items: center; 
+}
+
+#home h1 {
+    margin-bottom: 10px; 
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 60px; 
+}
+
+.content {
+    display: flex;
+    flex-direction: column; 
+    font-size: 130%;
+}
+
+#about {
+    font-size: 130%;
+}
+
+#about h1{
+    margin-bottom: 20px;
+}
+
+.about-me p{
+    font-size: 18px; 
+}
+
+#skill {
+    font-size: 130%;
+}
+
+#skill h1{
+    margin-bottom: 20px;
+}
+
+.skill-category {
+    margin-bottom: 30px; 
+}
+
+.skill-category h3 {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+.skill-category ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+.skill-category ul li {
+    font-size: 18px; 
+    margin-bottom: 5px; 
+}
+
+#project {
+    font-size: 130%;
+}
+
+#project h1 {
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 30px; 
+}
+
+.project h3 {
+    font-size: 24px; 
+    margin-bottom: 10px; 
+}
+
+.project p {
+    font-size: 18px; 
+    margin-bottom: 20px;
+}
+
+.see-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; 
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+.see-more:hover {
+    background-color: #0056b3; 
+}
+
+#contact {
+    font-size: 130%;
+}
+
+#contact h1{
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #007bff; 
+    text-decoration: none; 
+}
+
+.contact-info a:hover {
+    text-decoration: underline; 
+}
+
+.contact-info p {
+    margin-bottom: 15px; 
+}
+
+.back-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ff5733;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-button:hover {
+    background-color: #ff2e00;
+    transform: scale(1.05); 
+}
+
+@media (max-width: 1024px) {
+    .navbar {
+        position: fixed;
+        width: 100%;
+        height: 70px; 
+        top: 0;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row; 
+        width: 100%; 
+        justify-content: space-around;
+    }
+
+    .navbar ul li {
+        margin: 0;
+    }
+
+    .navbar ul li a {
+        padding: 10px; 
+        font-size: 16px;
+    }
+
+    section {
+        margin-left: 0;
+        padding-top: 80px; 
+    }
+
+    #home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .profile-image {
+        margin: 20px 0;
+        width: 200px;
+        height: 200px;
+    }
+
+    .content {
+        font-size: 110%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 60px;
+    }
+
+    .navbar ul {
+        padding: 10px;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    section {
+        padding-top: 70px; 
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    h1, h3 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar ul {
+        flex-direction: row;
+    }
+
+    .navbar ul li a {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    section {
+        padding-top: 70px;
+    }
+
+    h1, h3 {
+        font-size: 20px;
+    }
+
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+}
